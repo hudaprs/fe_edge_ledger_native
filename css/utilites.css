@@ -15,6 +15,7 @@
   padding: 10px 30px;
   cursor: pointer;
   color: #fff;
+  text-align: center;
 }
 
 .btn:hover {
@@ -48,6 +49,11 @@
 .btn-outline {
   border: 1px #fff solid;
   background-color: transparent;
+}
+
+/* Flex Reverse */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
 }
 
 /* Flex Items */
@@ -108,4 +114,36 @@
 
 .flex-columns p {
   margin: 20px 0;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.section-header h2{
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
