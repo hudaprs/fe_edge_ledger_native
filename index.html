@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="./css/utilites.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/lightbox.min.css">
   <title>Welcome To EdgeLedger</title>
 </head>
 <body id="home">
   <header class="hero">
-    <div id="navbar" class="navbar">
+    <div id="navbar" class="navbar top">
       <h1 class="logo">
         <span class="text-primary">
           <em class="fas fa-book-open"></em>
@@ -124,20 +126,68 @@
       </header>
       <div class="row">
         <div class="column">
-          <img src="images/cases/cases1.jpg" alt="">
-          <img src="images/cases/cases2.jpg" alt="">
+          <a
+            href="images/cases/cases1.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases1.jpg" alt="Cases One">
+          </a>
+          <a
+            href="images/cases/cases2.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases2.jpg" alt="Cases Two">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases3.jpg" alt="">
-          <img src="images/cases/cases4.jpg" alt="">
+          <a
+            href="images/cases/cases3.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases3.jpg" alt="Cases Thre">
+          </a>
+          <a
+            href="images/cases/cases4.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases4.jpg" alt="Cases 4">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases5.jpg" alt="">
-          <img src="images/cases/cases6.jpg" alt="">
+          <a
+            href="images/cases/cases5.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases6.jpg" alt="Cases 5">
+          </a>
+          <a
+            href="images/cases/cases6.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases6.jpg" alt="Cases 6">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases7.jpg" alt="">
-          <img src="images/cases/cases8.jpg" alt="">
+          <a
+            href="images/cases/cases7.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases7.jpg" alt="">
+          </a>
+          <a
+            href="images/cases/cases8.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, corrupti!"
+          >
+            <img src="images/cases/cases8.jpg" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -161,7 +211,7 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo aliquam corrupti, optio animi eos at incidunt eius eum neque itaque! Nemo eligendi amet dolores commodi consequatur quidem, cupiditate quo.
             </p>
-            <a href="#" class="btn btn-outline">
+            <a href="blog.html" class="btn btn-outline">
               <em class="fas fa-chevron-right"></em>
               Read Our Blog
             </a>
@@ -228,7 +278,7 @@
                 <label for="phone">Phone</label>
                 <input type="text" id="phone" placeholder="Enter Phone">
               </div>
-              <input type="text" id="submit" value="Send" class="btn btn-primary">
+              <input type="button" id="submit" value="Send" class="btn btn-primary">
             </form>
           </div>
         </div>
@@ -247,5 +297,9 @@
     </div>
     <p>Copyright &copy; 2020 - EdgeLedger</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="./js/lightbox.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
